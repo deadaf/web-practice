@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
   </head>
+
   <body>
     <div class="container">
       <h1>
@@ -15,6 +17,7 @@
       </h1>
 
       <div class="calculator">
+        <span id="errorMsg" style="color: red"></span>
         <input type="text" name="screen" id="answer" readonly />
 
         <table>
@@ -28,7 +31,7 @@
             <td><button>7</button></td>
             <td><button>8</button></td>
             <td><button>9</button></td>
-            <td><button>X</button></td>
+            <td><button>*</button></td>
           </tr>
           <tr>
             <td><button>4</button></td>
@@ -52,7 +55,6 @@
         <hr style="max-width: 50vw" />
       </div>
     </div>
-    <div id="turn">PLEASE TURN YOUR DEVICE</div>
   </body>
   <script src="calc.js"></script>
 </html>
